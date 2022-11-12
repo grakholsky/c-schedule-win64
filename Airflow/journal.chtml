@@ -1,0 +1,321 @@
+<div class="subnav-controls">
+    <div class="container">
+        <div class="nav-menu nav-controls">
+            <ul>
+
+                <li>
+                    <div class="nav-controls-switch switch-studymode">
+                        <input id="study-1" type="radio" value="1" name="study" checked="">
+                        <label for="study-1">Денна</label>
+                        <input id="study-2" type="radio" value="2" name="study">
+                        <label for="study-2">Заочна</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="select-courses">
+                        <label>
+                            <select>
+                                <option>1 курс</option>
+                                <option>2 курс</option>
+                                <option>3 курс</option>
+                                <option selected="">4 курс</option>
+                                <option>5 курс</option>
+                            </select>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="select-groups">
+                        <label>
+                            <select>
+                                <option selected>1 група</option>
+                                <option>2 група</option>
+                            </select>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="schedule-group-wrap">
+                        <div class="schedule-group-icon"></div>
+                        <div class="schedule-group-text">
+                            <h2 class="schedule-group-header">
+                                <span id="schedule-group-title">КСМ-11-1</span>
+                            </h2>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--<div class="row"><div class="subnav-hide"><div class="subnav-hide-text">сховати</div></div></div>-->
+    </div>
+</div>
+<div class="journal">
+    <div class="container">
+        <div class="row">
+            <div class="medium-12 small-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td>Студенти</td>
+                                <td>1 неділя</td>
+                                <td>2 неділя</td>
+                                <td>3 неділя</td>
+                                <td>4 неділя</td>
+                                <td>5 неділя</td>
+                                <td>6 неділя</td>
+                                <td>7 неділя</td>
+                                <td>8 неділя</td>
+                                <td>9 неділя</td>
+                                <td>10 неділя</td>
+                                <td>11 неділя</td>
+                                <td>12 неділя</td>
+                                <td>13 неділя</td>
+                                <td>14 неділя</td>
+                            </tr>
+                            <tr>
+                                <td>Балаєв</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="good">
+                                <td>Богун</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Заєць</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="warning">
+                                <td>Ковальчук</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>н</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>н</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Коломієць</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Марциновський</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="bad">
+                                <td>Павлов</td>
+                                <td></td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Павлюк</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Панов</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="good">
+                                <td>Примачова</td>
+                                <td></td>
+                                <td></td>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                                <td>5</td>
+                                <td></td>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Резнік</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="bad">
+                                <td>Саєнко</td>
+                                <td></td>
+                                <td></td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Тимошенко</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="bad">
+                                <td>Шапочкін</td>
+                                <td></td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td></td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td></td>
+                                <td>н</td>
+                                <td>н</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row schedule-wrap" id="schedule-load"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

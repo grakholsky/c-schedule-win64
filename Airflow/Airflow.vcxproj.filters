@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\config">
+      <UniqueIdentifier>{e9854380-fadb-43e2-bdc8-455b23faed98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client">
+      <UniqueIdentifier>{4d061bdb-e77b-4638-b6b8-0eda1023c817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\css">
+      <UniqueIdentifier>{da843bbc-dbd0-466a-a263-1e56607caa03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\js">
+      <UniqueIdentifier>{4513716d-cbb4-4b7a-91c0-bb20477dd2aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\models">
+      <UniqueIdentifier>{5e581edd-bdfb-455d-8b1f-8fdc93a69340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\views">
+      <UniqueIdentifier>{40f24685-741d-41c4-98d0-53acdaf09607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\views\index">
+      <UniqueIdentifier>{c36328c0-168a-42bb-9114-4d8247b80262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\views\schedule">
+      <UniqueIdentifier>{608c1908-1814-45c6-9e9e-3566d8ae8ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\views\journal">
+      <UniqueIdentifier>{c867d8ff-0f10-42c0-bca8-24a299db0b33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\routes">
+      <UniqueIdentifier>{ce1669f0-52d4-4dfc-b26c-5812b3ded453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\routes\index">
+      <UniqueIdentifier>{c14b3b68-fa68-4381-b371-52769bd3d7fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\routes\schedule">
+      <UniqueIdentifier>{357bef02-4221-4295-9ceb-7f7a3f961a17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\routes\journal">
+      <UniqueIdentifier>{22fe218d-f3a1-4955-b14c-0edfa8d89946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Client\views\testing">
+      <UniqueIdentifier>{6befc219-c370-4e27-bb77-a338ffe08189}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AFCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AFDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AFNetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AFError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AFCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="schedule.h">
+      <Filter>Resource Files\Client\routes\schedule</Filter>
+    </ClInclude>
+    <ClInclude Include="journal.h">
+      <Filter>Resource Files\Client\routes\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="index.h">
+      <Filter>Resource Files\Client\routes\index</Filter>
+    </ClInclude>
+    <ClInclude Include="AFTemplater.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AFCommon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AFDatabase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AFNetwork.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AFError.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AFCore.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models.c">
+      <Filter>Resource Files\Client\models</Filter>
+    </ClCompile>
+    <ClCompile Include="index.c">
+      <Filter>Resource Files\Client\routes\index</Filter>
+    </ClCompile>
+    <ClCompile Include="schedule.c">
+      <Filter>Resource Files\Client\routes\schedule</Filter>
+    </ClCompile>
+    <ClCompile Include="journal.c">
+      <Filter>Resource Files\Client\routes\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="AFStartup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AFTemplater.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\main.css">
+      <Filter>Resource Files\Client\css</Filter>
+    </None>
+    <None Include="schedule.js">
+      <Filter>Resource Files\Client\js</Filter>
+    </None>
+    <None Include="groups.json">
+      <Filter>Resource Files\Client\models</Filter>
+    </None>
+    <None Include="index.chtml">
+      <Filter>Resource Files\Client\views\index</Filter>
+    </None>
+    <None Include="journal.chtml">
+      <Filter>Resource Files\Client\views\journal</Filter>
+    </None>
+    <None Include="testing.chtml">
+      <Filter>Resource Files\Client\views\testing</Filter>
+    </None>
+    <None Include="header.chtml">
+      <Filter>Resource Files\Client\views</Filter>
+    </None>
+    <None Include="layout.chtml">
+      <Filter>Resource Files\Client\views</Filter>
+    </None>
+    <None Include="schedule.chtml">
+      <Filter>Resource Files\Client\views\schedule</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="favicon.ico">
+      <Filter>Resource Files\Client</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="mimes.conf">
+      <Filter>Resource Files\config</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

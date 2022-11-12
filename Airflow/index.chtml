@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= Title %></title>
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body style="background-color: #fafafa;" >
+    <div style="background-color: #fafafa;" id="navbar" class="navbar">
+        <div class="container">
+            <nav id="site-navigation" class="navigation main-navigation" role="navigation">
+                <div class="nav-menu nav-menu-main">
+                    <ul>
+                        <li class="search-li">
+                            <a href="/">
+                                <div class="solution-logo-icon-gray"></div>
+                            </a>
+                        </li>
+                        <li class="active"><a style="color: rgb(102, 102, 102);" href="/schedule">Розклад</a></li>
+                        <li><a style="color: rgb(102, 102, 102);" href="/journal">Журнал</a></li>
+                        <li><a style="color: rgb(102, 102, 102);" href="#">Тестування</a></li>
+                        <li><a style="color: rgb(102, 102, 102);" href="#">Вебінари</a></li>
+                        <!--<li class="search-li">
+                            <div class="search-form">
+                                <form role="search" method="post" action="/">
+                                    <label>
+                                        <span class="screen-reader-text">Search for:</span>
+                                        <input autocomplete="off" autocorrect="off" autocapitalize="off" type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
+                                    </label>
+
+                                    <input type="submit" class="search-submit" value="Search">
+                                </form>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+        <div style="" class="container">
+            <div class="small-12 medium-12" style="text-align: center;">
+                <a href="/" style="cursor: pointer; display: block;">
+                    <div class="solution-biglogo-icon"></div>
+                    <h1 style="display: none;">Teach Solution</h1>
+                </a>
+                <div style="color: rgb(102, 102, 102);">[Краткое описание]</div>
+            </div>
+        </div>
+    
+    <footer class="site-info-container">
+        <div class="site-info">
+            <span class="copyright">TS © 2015</span>
+        </div><!-- .site-info -->
+    </footer><!-- .site-info-container -->
+</body>
+</html>

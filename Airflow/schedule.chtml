@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/schedule.js"></script>
+</head>
+<body onload="loadSchedule();">
+    <div id="navbar" class="navbar">
+        <div class="container">
+            <nav id="site-navigation" class="navigation main-navigation" role="navigation">
+                <div class="nav-menu nav-menu-main">
+                    <ul>
+                        <li class="search-li">
+                            <a href="/">
+                                <div class="solution-logo-icon"></div>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="/schedule">Розклад</a>
+                        </li>
+                        <li>
+                            <a href="/journal">Журнал</a>
+                        </li>
+                        <li>
+                            <a href="#">Тестування</a>
+                        </li>
+                        <li>
+                            <a href="#">Вебінари</a>
+                        </li>
+                        <!--<li class="search-li">
+                            <div class="search-form">
+                                <form role="search" method="post" action="/">
+                                    <label>
+                                        <span class="screen-reader-text">Search for:</span>
+                                        <input autocomplete="off" autocorrect="off" autocapitalize="off" type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
+                                    </label>
+
+                                    <input type="submit" class="search-submit" value="Search">
+                                </form>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+            </nav><!-- #site-navigation -->
+        </div>
+    </div><!-- #navbar -->
+    <div class="subnav">
+        <div class="container">
+            <div class="small-12 medium-5">
+                <div class="nav-select" id="nav-faculties">
+                    <a id="nav-faculties-selected">
+                        <span class="placeholder">Факультети</span>
+                    </a>
+                    <span class="pointer"></span>
+                </div>
+                <ul class="nav-options" id="nav-options-faculties">
+                    <li>
+                        <a class="nav-faculties-link">
+                            <div class="nav-faculties-icon" id="faculty-gf-icon"></div>
+                            <div class="nav-faculties-label">Гірничий факультет</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-faculties-link">
+                            <div class="nav-faculties-icon" id="faculty-gef-icon"></div>
+                            <div class="nav-faculties-label">Геолого-екологічний факультет</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-faculties-link">
+                            <div class="nav-faculties-icon" id="faculty-fit-icon"></div>
+                            <div class="nav-faculties-label">Факультет інформаційних технологій</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-faculties-link">
+                            <div class="nav-faculties-icon" id="faculty-mmf-icon"></div>
+                            <div class="nav-faculties-label">Механіко-машинобудівний факультет</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-faculties-link">
+                            <div class="nav-faculties-icon" id="faculty-bf-icon"></div>
+                            <div class="nav-faculties-label">Будівельний факультет</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-faculties-link">
+                            <div class="nav-faculties-icon" id="faculty-etf-icon"></div>
+                            <div class="nav-faculties-label">Електротехнічний факультет</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-faculties-link">
+                            <div class="nav-faculties-icon" id="faculty-tf-icon"></div>
+                            <div class="nav-faculties-label">Транспортний факультет</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-faculties-link">
+                            <div class="nav-faculties-icon" id="faculty-ef-icon"></div>
+                            <div class="nav-faculties-label">Факультет економіки та управління бізнесом</div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="small-12 medium-5">
+                <div class="nav-select" id="nav-cafedras">
+                    <a id="nav-cafedras-selected">
+                        <span class="placeholder">Кафедри</span>
+                    </a>
+                    <span class="pointer"></span>
+                </div>
+                <ul class="nav-options" id="nav-options-cafedras">
+                    <li>
+                        <a class="nav-cafedras-link">
+                            <div class="nav-cafedras-label" data-id="9">Кафедра моделювання і програмного забезпечення</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-cafedras-link">
+                            <div class="nav-cafedras-label" data-id="10">Кафедра інформатики, автоматики і систем управління</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-cafedras-link">
+                            <div class="nav-cafedras-label" data-id="11">Кафедра комп'ютерних систем та мереж</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-cafedras-link">
+                            <div class="nav-cafedras-label" data-id="12">Кафедра економічної кібернетики і управління проектами</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-cafedras-link">
+                            <div class="nav-cafedras-label" data-id="13">Кафедра інженерної математики</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-cafedras-link">
+                            <div class="nav-cafedras-label" data-id="14">Кафедра інженерної педагогіки та мовної підготовки</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-cafedras-link">
+                            <div class="nav-cafedras-label" data-id="15">Кафедра іноземних мов</div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+			<div class="small-12 medium-1"></div>
+        </div>
+    </div>
+    <div class="subnav-controls">
+        <div class="container">
+            <div class="small-12 medium-5 nav-controls">
+                <div class="nav-controls-switch switch-teachstud">
+                    <input id="radio-teacher" value="teacher" name="teachstudswitch" checked="" type="radio">
+                    <label for="radio-teacher">Викладачі</label>
+                    <input id="radio-group" value="group" name="teachstudswitch" type="radio">
+                    <label for="radio-group">Студенти</label>
+                </div>
+            </div>
+            <div class="small-12 medium-5">
+                <div class="nav-select-sm" id="nav-groups">
+                    <a id="nav-groups-selected">
+                        <span class="placeholder">Групи</span>
+                    </a>
+                    <span class="pointer"></span>
+                </div>
+                <ul class="nav-options-sm" id="nav-options-groups">
+
+                    <li>
+                        <a class="nav-groups-link">
+                            <div data-id="10">КСМ-14-2</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-groups-link">
+                            <div data-id="11">КСМ-14-1</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-groups-link">
+                            <div data-id="12">КСМ-13-2</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-groups-link">
+                            <div data-id="13">КСМ-13-1</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-groups-link">
+                            <div data-id="14">КСМ-12-2</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-groups-link">
+                            <div data-id="15">КСМ-12-1</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="small-12 medium-3">
+                <div class="nav-controls-switch switch-studyweek">
+                    <input id="week-1" value="1" name="week" type="radio" checked>
+                    <label for="week-1">1 тиждень</label>
+                    <input id="week-2" value="2" name="week" type="radio">
+                    <label for="week-2">2 тиждень</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="medium-10 small-12">
+                    <div class="row schedule-wrap" id="schedule-load">
+
+                    </div>
+                </div>
+                <div class="medium-2">
+                    <div id="schedule-sidebar">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <div class="schedule-bell-panel">
+                                    <div class="schedule-bell-icon"></div>
+                                    <div class="schedule-bell-icon"></div>
+                                </div>
+                            </div>
+                            <div class="panel-body schedule-bells">
+                                <ol start="0">
+                                    <li>
+                                        <span>7.30 – 8.50</span>
+                                    </li>
+                                    <li>
+                                        <span>9.00 – 10.20</span>
+                                    </li>
+                                    <li>
+                                        <span>10.30 – 11.50</span>
+                                    </li>
+                                    <li>
+                                        <span>12.30 – 13.50</span>
+                                    </li>
+                                    <li>
+                                        <span>14.00 – 15.20</span>
+                                    </li>
+                                    <li>
+                                        <span>15.30 – 16.50</span>
+                                    </li>
+                                    <li>
+                                        <span>17.00 – 18.20</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-info-container">
+        <div class="site-info">
+            <span class="copyright">Solution © 2015</span>
+        </div><!-- .site-info -->
+    </footer><!-- .site-info-container -->
+    <script>
+		var openWindowId = "";
+		var optionClick = 0;
+		
+        document.getElementById("week-1").onclick = function () {
+            document.getElementById("week1").style.display = "block";
+            document.getElementById("week2").style.display = "none";
+        }
+        document.getElementById("week-2").onclick = function () {
+            document.getElementById("week1").style.display = "none";
+            document.getElementById("week2").style.display = "block";
+        }
+		
+		function setOptions ( idElement ) {
+			if (optionClick == 0) {
+				if (openWindowId != "") {
+					document.getElementById(openWindowId).style.display = "none";
+				}
+				document.getElementById(idElement).style.display = "block";
+				openWindowId = idElement;
+				optionClick = 1;
+			} else {
+				if (openWindowId != idElement) {
+					document.getElementById(openWindowId).style.display = "none";
+					document.getElementById(idElement).style.display = "block";
+					openWindowId = idElement;
+					optionClick = 1;
+				} else {
+					document.getElementById(idElement).style.display = "none";
+					openWindowId = "";
+					optionClick = 0;
+				}
+			}
+		}
+		
+		document.getElementById("nav-faculties").onclick = function () { setOptions("nav-options-faculties"); }
+		
+		document.getElementById("nav-cafedras").onclick = function () { setOptions("nav-options-cafedras"); }
+		
+		document.getElementById("nav-groups").onclick = function () { setOptions("nav-options-groups"); }
+		
+		var faculties = document.getElementsByClassName("nav-faculties-link");
+
+		for (var i = 0; i < faculties.length; i++) {
+			faculties[i].addEventListener("click", (function(i) {
+				return function() {
+					var oldChild = document.getElementById("nav-faculties-selected").children[0];
+					var oldChildID = oldChild.id.replace("-active", "");
+					oldChild.id = oldChildID;
+					var faculty = document.getElementById("nav-faculties-selected");
+					faculty.innerHTML = this.innerHTML;
+					var child = faculty.children[0];
+					var childID = child.id;
+					childID += "-active";
+					child.id = childID;
+					document.getElementById(openWindowId).style.display = "none";
+					openWindowId = "";
+					optionClick = 0;
+				};
+			})(i), false);
+		}
+		
+		var cafedras = document.getElementsByClassName("nav-cafedras-link");
+
+		for (var i = 0; i < cafedras.length; i++) {
+			cafedras[i].addEventListener("click", (function(i) {
+				return function() {
+					document.getElementById("nav-cafedras-selected").innerHTML = this.innerHTML;
+					document.getElementById(openWindowId).style.display = "none";
+					openWindowId = "";
+					optionClick = 0;
+				};
+			})(i), false);
+		}
+		
+		var groups = document.getElementsByClassName("nav-groups-link");
+
+		for (var i = 0; i < groups.length; i++) {
+			groups[i].addEventListener("click", (function(i) {
+				return function() {
+					document.getElementById("nav-groups-selected").innerHTML = this.innerHTML;
+					document.getElementById(openWindowId).style.display = "none";
+					openWindowId = "";
+					optionClick = 0;
+				};
+			})(i), false);
+		}
+		window.onscroll = function() {
+		  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+		  if (scrolled > 170) {
+			var sidebar = document.getElementById("schedule-sidebar");
+			sidebar.style.position = "fixed";
+			sidebar.style.top = "0px";
+			
+		  } else {
+			document.getElementById("schedule-sidebar").style.position = "static";	
+		  }
+		}
+		
+    </script>
+</body>
+</html>

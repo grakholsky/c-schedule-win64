@@ -1,0 +1,31 @@
+<div id="navbar" class="navbar">
+    <div class="container">
+        <nav id="site-navigation" class="navigation main-navigation" role="navigation">
+            <div class="nav-menu nav-menu-main">
+                <ul>
+                    <li class="search-li">
+                        <a href="/">
+                            <div class="solution-logo-icon"></div>
+                        </a>
+                    </li>
+                    <li class="active"><a href="/schedule">Розклад</a></li>
+                    <li><a href="/journal">Журнал</a></li>
+                    <li><a href="/testing">Тестування</a></li>
+                    <li><a href="#">Вебінари</a></li>
+                    <!--<li class="search-li">
+                        <div class="search-form">
+                            <form role="search" method="post" action="/">
+                                <label>
+                                    <span class="screen-reader-text">Search for:</span>
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
+                                </label>
+
+                                <input type="submit" class="search-submit" value="Search">
+                            </form>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+        </nav><!-- #site-navigation -->
+    </div>
+</div><!-- #navbar -->
