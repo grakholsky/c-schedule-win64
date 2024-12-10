@@ -1,2 +1,2 @@
-# diploma-win64
+# C Schedule Win64
 Schedule server
